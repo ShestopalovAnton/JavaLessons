@@ -14,7 +14,7 @@ public class Main {
 		System.out.println("phone.getType() = " + phone.getType());
 		System.out.println("phone.getProcessor() = " + phone.getProcessor());
 		
-		phone.setName("LG");
+		phone.setName("Panasonic");
 	}
 
 }
