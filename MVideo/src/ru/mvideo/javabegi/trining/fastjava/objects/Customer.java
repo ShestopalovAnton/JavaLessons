@@ -1,10 +1,11 @@
 package ru.mvideo.javabegi.trining.fastjava.objects;
 
 public class Customer {
-	private int money;
+	
 	private String name;
 	private String phone;
 	private String email;
+	private int money;
 	
 	public int getMoney() {
 		return money;

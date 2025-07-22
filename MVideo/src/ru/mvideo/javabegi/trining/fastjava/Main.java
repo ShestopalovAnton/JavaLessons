@@ -1,6 +1,7 @@
 package ru.mvideo.javabegi.trining.fastjava;
 
-import ru.mvideo.javabegi.trining.fastjava.objects.Apple;
+import ru.mvideo.javabegi.trining.fastjava.objects.Phone;
+import ru.mvideo.javabegi.trining.fastjava.objects.Basket;
 import ru.mvideo.javabegi.trining.fastjava.objects.Cashier;
 
 public class Main {
@@ -20,9 +21,10 @@ public class Main {
 		//cashier_1.sellProduct(5000);
 		System.out.println("Номер чека: " + cashier_1.sellProduct(5000));
 		
-		Apple phone1 = new Apple();
+		Phone phone1 = new Phone();
 		
-		phone1.setModel("iPhone 16 Pro Max");
+		phone1.setMBrand("iPhone");
+		phone1.setModel("16 Pro Max");
 		phone1.setColor("Black");
 		phone1.setProcessor("A18 Pro");
 		phone1.setRom(256);
@@ -30,12 +32,19 @@ public class Main {
 		phone1.setQuantity(10);
 		
 		System.out.println("\nХарактеристики: ");
+		System.out.println("Бренд - " + phone1.getMBrand());
 		System.out.println("Модель - " + phone1.getModel());
 		System.out.println("Цвет - " + phone1.getColor());
 		System.out.println("Процессор - " + phone1.getProcessor());
 		System.out.println("Память - " + phone1.getRom());
-		System.out.println("Касмера - " + phone1.getCamera() + "\n");
+		System.out.println("Камера - " + phone1.getCamera() + "\n");
 		
 		phone1.takePhone(2);
+		
+		Basket basket = new Basket("Null", "Null", 12, 1);
+		
+		Basket.getProducts(1);
+		
+		
 	}
 }

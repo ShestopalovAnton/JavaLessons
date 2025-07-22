@@ -1,13 +1,22 @@
 package ru.mvideo.javabegi.trining.fastjava.objects;
 
-public class Apple {
+public class Headphones {
 	
+	private String brand;
 	private String model;
 	private String color;
-	private String processor;
-	private int rom;
-	private int camera;
+	private boolean microphone;
+	private int sensitivity;
+	private int weight;
+	private int price;
 	private int quantity;
+		
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
 
 	public String getModel() {
 		return model;
@@ -15,38 +24,50 @@ public class Apple {
 	public void setModel(String model) {
 		this.model = model;
 	}
+
 	public String getColor() {
 		return color;
 	}
 	public void setColor(String color) {
 		this.color = color;
 	}
-	public String getProcessor() {
-		return processor;
+
+	public boolean isMicrophone() {
+		return microphone;
 	}
-	public void setProcessor(String processor) {
-		this.processor = processor;
+	public void setMicrophone(boolean microphone) {
+		this.microphone = microphone;
 	}
-	public int getRom() {
-		return rom;
+
+	public int getSensitivity() {
+		return sensitivity;
 	}
-	public void setRom(int ram) {
-		this.rom = ram;
+	public void setSensitivity(int sensitivity) {
+		this.sensitivity = sensitivity;
 	}
-	public int getCamera() {
-		return camera;
+
+	public int getWeight() {
+		return weight;
 	}
-	public void setCamera(int camera) {
-		this.camera = camera;
+	public void setWeight(int weight) {
+		this.weight = weight;
 	}
+	
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	
 	public int getQuantity() {
 		return quantity;
 	}
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
-	
-	public void takePhone(int take) {
+
+	public void takeHeadphones(int take) {
 		
 		if (take > quantity) {
 			
